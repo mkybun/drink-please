@@ -12,8 +12,8 @@ function App() {
       const response = await axios.get(`api/json/v1/1/random.php`);
       const drink = response.data;
       setDrink(drink.drinks[0]);
+      
       let ingredients = [];
-     
       for (let i = 1; i < 16; i++) {
         if (drink.drinks[0][`strIngredient${i}`] === null) {
           break;
