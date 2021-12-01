@@ -1,4 +1,3 @@
-import './App.css';
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
@@ -23,10 +22,10 @@ function RandomDrink() {
         }
         ingredients.push(drink.drinks[0][`strMeasure${i}`] + "" + drink.drinks[0][`strIngredient${i}`]);
       }
-      console.log('array of ingredients:', ingredients);
+    //   console.log('array of ingredients:', ingredients);
       setIngredients(ingredients);
 
-      console.log('array', drink.drinks[0]);
+    //   console.log('array', drink.drinks[0]);
     } catch (error) {
       console.log(error);
     }

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Norican&family=Pacifico&family=Rochester&family=Sansita&display=swap');
+
+
+body {
+    background-color: rgb(226, 149, 33);
+}
+
+.outer-drink {
+    background-color: rgb(231, 181, 105);
+    font-family: 'Pacifico';
+    font-size: 4em;
+}
+
