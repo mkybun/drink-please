@@ -1,11 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
-import App from './App';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import RandomDrink from './RandomDrink';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+render(
+  <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="random" element={<RandomDrink />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
