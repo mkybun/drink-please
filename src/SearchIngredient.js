@@ -17,7 +17,6 @@ function SearchIngredient() {
         }
         listIngredients.sort();
           setIngredient(listIngredients);
-        //   console.log('ingredients', listIngredients)
       } catch (error) {
         console.log(error);
       }
@@ -31,15 +30,14 @@ function SearchIngredient() {
             try {
                 let name = e.target.value
                 setName(name)
-                console.log(name)
                 const response = await axios.get(`api/json/v1/1/filter.php?i=${name}`);
-                // const response = await axios.get(`api/json/v1/1/filter.php?i=vodka`);
                 const cocktails = response.data
                 let listDrinks = []
                 for (let i = 0; i < cocktails.drinks.length; i++) {
                     listDrinks.push(cocktails.drinks[`${i}`][`strDrink`])
                 }
                 setDrinks(listDrinks)
+
             } catch (error) {
                 console.log(error)
             }
@@ -47,13 +45,6 @@ function SearchIngredient() {
         // getAllDrinks()
     // }, [])
 
- 
-
-    // function getAllTheDrinksMap() {
-    //     getDrinks.map((single) => {
-    //         return <div>{single}</div>
-    //     })
-    // }
 
   return (
     <div>
@@ -64,7 +55,10 @@ function SearchIngredient() {
             return <option key={index}>{single}</option>
           })}
               </select>
-      </div>
+          </div>
+          <div>{getDrinks.map((single, index) => {
+                return (<div key={index}>{single}</div>)
+            })}</div>
     </div>
   );
 }
