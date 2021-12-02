@@ -35,9 +35,9 @@ function SearchIngredient() {
                 let listDrinks = []
                 for (let i = 0; i < cocktails.drinks.length; i++) {
                     listDrinks.push(cocktails.drinks[`${i}`][`strDrink`])
+                    listDrinks.push(cocktails.drinks[`${i}`][`strDrinkThumb`])
                 }
                 setDrinks(listDrinks)
-
             } catch (error) {
                 console.log(error)
             }
@@ -57,8 +57,12 @@ function SearchIngredient() {
               </select>
           </div>
           <div>{getDrinks.map((single, index) => {
-                return (<div key={index}>{single}</div>)
-            })}</div>
+              return (<div key={index}>
+                  {(index % 2 !== 0 ? <img alt='drinks' src={single} /> : <h1>{single}</h1>)}
+              </div>
+                  
+              )
+          })}</div>
     </div>
   );
 }

@@ -40,7 +40,6 @@ function RandomDrink() {
           <Link to='/'>Go Back Home</Link>
       <button onClick={() => getRandomDrink()}>Random Drink Please</button>
 
-      {/* {getDrink.strDrink && <h1>{getDrink.strDrink}</h1>} */}
       <h1>{getDrink.strDrink}</h1>
       <p>Category: {getDrink.strCategory}</p>
       <p>Instructions: {getDrink.strInstructions}</p>
