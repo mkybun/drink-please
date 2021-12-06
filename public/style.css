@@ -3,11 +3,34 @@
 
 body {
     background-color: rgb(226, 149, 33);
+    font-family: 'Sansita';
+
 }
 
 .outer-drink {
+    display: flex;
+    justify-content: center;
     background-color: rgb(231, 181, 105);
     font-family: 'Pacifico';
-    font-size: 4em;
+    font-size: 6em;
+    border-radius: 50%;
+    width: 60vw;
+    height: 40vh;
+    margin:auto;
+    text-shadow: -4px 3px 0 #d38612, -14px 7px 0 #dda653;
 }
+
+.routes-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+    font-size: 2em;
+}
+
+.drink-please {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
 
