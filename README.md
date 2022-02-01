@@ -10,9 +10,10 @@ Try the Random Drink button if you're feeling risky or Search by Ingredient if y
 
 # In Progess Photos
 
-<img src="https://i.ibb.co/PNXRYM3/Screen-Shot-2022-02-01-at-11-56-22-AM.png" alt="front logo" style="height: 400px; width:600px;"/>
+![Landing](https://i.ibb.co/PNXRYM3/Screen-Shot-2022-02-01-at-11-56-22-AM.png)
 
-<img src="https://i.ibb.co/zrcbnBd/Screen-Shot-2022-02-01-at-11-57-49-AM.png" alt="front logo" style="height: 400px; width:600px;"/>
+![Landing](https://i.ibb.co/zrcbnBd/Screen-Shot-2022-02-01-at-11-57-49-AM.png)
 
-<img src="https://i.ibb.co/r79SzrF/Screen-Shot-2022-02-01-at-11-58-32-AM.png" alt="front logo" style="height: 400px; width:600px;"/>
+![Landing](https://i.ibb.co/r79SzrF/Screen-Shot-2022-02-01-at-11-58-32-AM.png)
+
 
