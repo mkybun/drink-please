@@ -7,6 +7,8 @@ export default function Home() {
       <div className="outer-drink">
         <p className="drink-please">Drink Please</p>
       </div>
+      <p className='subtext'>A Cocktail Lovers Online Recipe Book</p>
+
       <div className="routes-container">
         <Link to="random">Random Drink</Link>
         <Link to="searchIngredient">Search By Ingredient</Link>
