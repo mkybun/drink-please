@@ -56,20 +56,22 @@ function SearchIngredient() {
             return <option key={index}>{single}</option>;
           })}
         </select>
-      </div>
-      <div>
+          </div>
+          
+        
+      <div className='drinks-container'>
         {getDrinks.map((single, index) => {
           return (
-            <div key={index}>
+            <div className='drinkpicandname' key={index}>
               {index % 2 !== 0 ? (
-                <img alt="drinks" src={single} />
+                <img className='drink-img' alt="drinks" src={single} />
               ) : (
-                <h1>{single}</h1>
+                <h1 className='drinkname'>{single}</h1>
               )}
             </div>
           );
         })}
-      </div>
+              </div>
     </div>
   );
 }

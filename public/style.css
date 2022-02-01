@@ -33,4 +33,31 @@ body {
     margin:auto;
 }
 
+.drinks-container {
+    display: flex;
+    flex-direction: column;
+    /* border-style: inset; */
+    justify-content: center;
+}
 
+.drink-img {
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    /* border-style: inset; */
+}
+
+.drinkpicandname {
+    /* border-style: solid; */
+    margin:10px;
+    width: 50vh;
+
+}
+
+.drinkname {
+    display: flex;
+    justify-content: center;
+    /* border-style: ridge; */
+    font-size: 2em;
+}
